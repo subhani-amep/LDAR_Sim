@@ -2,13 +2,13 @@ version: '2.0'
 parameter_level: program
 methods: {}
 method_labels:
-- OGI
-program_name: P_OGI
+- Scenario3
+program_name: P_Scenario3
 weather_file: 'weather_alberta.nc'
 weather_is_hourly: True
 infrastructure_file: 'SPOG_Facilities_Active.csv'
 site_samples: 400
-subtype_times_file: "_placeholder_str_"
+subtype_times_file: "subtype_times.csv"
 consider_weather: True
 repair_delay:
   val: [14]
@@ -18,7 +18,7 @@ emissions:
   leak_dist_params: [-2.776, 1.462]
   leak_dist_type: 'lognorm'
   leak_file: "Clearstone.csv"
-  leak_use: "sample"
+  leak_file_use: 'sample'
   LPR: 0.0065
   max_leak_rate: 100000.0
   subtype_leak_dist_file: "Subtype_Codes.csv"
